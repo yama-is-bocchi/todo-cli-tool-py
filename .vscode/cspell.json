@@ -23,6 +23,7 @@
         "mypy",
         "devcontainer",
         "__pycache__",
-        "venv"
+        "venv",
+        "jsonargparse"
     ]
 }
