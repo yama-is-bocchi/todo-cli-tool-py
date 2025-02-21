@@ -1,19 +1,28 @@
 {
-    "name": "${localWorkspaceFolderBasename}",
-    "image": "mcr.microsoft.com/devcontainers/python:3.13-bookworm",
-    "features": {
-        "ghcr.io/devcontainers-contrib/features/poetry:2": {
-            "version": "2.0.0"
-        }
-    },
-    "remoteUser": "vscode",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "ms-python.python",
-                "ms-python.vscode-pylance",
-                "streetsidesoftware.code-spell-checker"
-            ]
-        }
-    }
+    "useGitignore": true,
+    "ignorePaths": [
+        "**/.devcontainer/**",
+        "**/.git/objects/**",
+        "**/.vscode/**",
+        "**/*.log",
+        "**/*.sh",
+        "**/Dockerfile",
+        "**/venv/**",
+        "**/dist/**",
+        "**/.git/**",
+        "**/.pytest_cache/**",
+        "**/__pycache__/**",
+        "**/requirements.txt",
+        "**/*.toml",
+        "**/*.lock"
+    ],
+    "words": [
+        "devcontainer",
+        "pytest",
+        "flake8",
+        "mypy",
+        "devcontainer",
+        "__pycache__",
+        "venv"
+    ]
 }
