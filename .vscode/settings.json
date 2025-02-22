@@ -29,5 +29,8 @@
     "python.testing.unittestEnabled": true,
     "python.testing.pytestEnabled": true,
     "python.testing.autoTestDiscoverOnSaveEnabled": true,
-    "editor.guides.indentation": true
+    "editor.guides.indentation": true,
+    "python.analysis.extraPaths": [
+        "./todo-cli/todo_cli"
+    ]
 }
