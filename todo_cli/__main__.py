@@ -1,12 +1,12 @@
-import argparse
-from ast import arg
-
-from todo_cli.modules import parser
+from todo_cli.modules import parser, todo_app
 
 
 def main():
     args = parser.command_parse()
-    print(args)
+    app = todo_app.TodoApp()
+    match args.command:
+        case "create":
+            app.create(args)
 
 
 if __name__ == "__main__":
